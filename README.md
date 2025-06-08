@@ -1,17 +1,24 @@
 # XLAutoMAIL - 엑셀 오토메일
-## 2025.06.08 1.0.1 버전 릴리즈
 
-XL-AutoMAIL은 수신자별로 메일 제목, 본문, 첨부파일을 맞춤 구성하여 다수의 대상자에게 일괄 발송 가능한 Excel 기반 Outlook 연동 자동화 툴입니다. 예를 들면 개인별로 급여명세서를 보낸다던지 연말정산 결과를 보낼 때 수신자 별로 다른 내용과 다른 파일이 첨부된 메일을 한번에 보낼 수 있습니다.
+> 🎯 **XL-AutoMAIL V.1.0.1**  
+> Excel 기반 Outlook 자동 메일 발송 도구  
+> 수신자별 메일 제목 · 본문 · 첨부파일을 자동 구성하고, 클릭 한 번으로 대량 발송까지 처리할 수 있습니다.
+>  
+> 🔧 주요 기능
+> - 수신자별 맞춤 메일 템플릿 작성  
+> - 첨부파일 · 이미지 자동 삽입
+> - Outlook 서명 적용, 예약 발송 가능
+> - 개별 발송 or 전체 발송 모두 지원
 
 ※ PC에 Microsoft Outlook이 설치되어 있어야 합니다.
 
 ***
 ## 프로그램 다운로드
-XL-AutoMAIL 파일은 이 GitHub 저장소의 [files](https://github.com/hauovv/XLAutoMAIL/tree/main/files) 폴더에서 다운로드 할 수 있습니다.
+[XLAutoMAIL_V1.0.1.zip 다운로드](https://github.com/hauovv/XLAutoMAIL/raw/main/files/XLAutoMAIL_V1.0.1.zip)
 
 ※ zip 압축 파일입니다. 반드시 압축을 풀고 사용하세요.(샘플 메일을 위한 샘플 이미지 및 첨부파일이 포함되어 있습니다.)
 - zip 파일에는 샘플 메일을 위한 샘플 이미지 및 첨부파일이 포함되어 있습니다.
-- 샘플 메일을 사용해보기 전에 반드시 "Resources Update"버튼을 사용하여 첨부 파일 경로를 업데이트 해주세요!
+- 샘플 메일을 사용해보기 전에 반드시 **Resources Update**버튼을 사용하여 첨부 파일 경로를 업데이트 해주세요!
 
 ## 프로그램 사용법
 
@@ -20,7 +27,7 @@ XL-AutoMAIL 파일은 이 GitHub 저장소의 [files](https://github.com/hauovv/
 ※ 주의: 파일이 열릴 때 다음과 같은 오류가 표시되면 다음 순서대로 조치하면 됩니다.
 
 ![macro01](pics/macro01.jpg)<br>
-파일이 열릴 때 제한된 보기라고 나오면  <편집사용>을 누릅니다.
+파일이 열릴 때 제한된 보기라고 나오면  <편집사용> 버튼을 클릭합니다.
 
 ![macro02](pics/macro02.jpg)<br>
 매크로 사용과 관련된 보안경고가 나오면 <콘텐츠 사용>을 누릅니다.
@@ -64,7 +71,7 @@ Mail Body Table 에서는 메일 내용을 입력할 수 있습니다.
 <br>
 
 ![mContents03](pics/mContents03.jpg)<br>
-메일 내용의 작성 및 수정이 완료된 후 반드시 Contents Update 버튼을 눌러야 합니다.
+메일 내용의 작성 및 수정이 완료된 후 반드시 **Contents Update** 버튼을 눌러야 합니다.
 
 <br>
 
@@ -107,8 +114,8 @@ mList 시트에서는 메일 수신자와 수신자 별로 변경이 필요한 �
 
 ![mSend01](pics/mSend01.jpg)
 
-각 시트에 모든 내용 입력이 완료되었으면 XLAutoMAIL 리본메뉴를 통해 Outlook으로 메일을 보낼 수 있습니다.
-메일 컨텐츠 작성이 완료되었다면 "Contents Update"를 눌러야 Outlook에 적용됩니다.
+각 시트에 모든 내용 입력이 완료되었으면 XLAutoMAIL 리본메뉴를 통해 Outlook으로 메일을 자동으로 발송합니다.
+메일 컨텐츠 작성이 완료되었다면 **Contents Update**를 눌러야 Outlook에 적용됩니다.
 
 #### Mail Send 메뉴
 대상자 전체에게 자동메일 보내기
@@ -120,11 +127,18 @@ mList 시트에서는 메일 수신자와 수신자 별로 변경이 필요한 �
 
 ![mSend02](pics/mSend02.jpg)<br>
 mContents시트에서 스핀버튼을 통해 현재 대상자 번호를 변경할 수 있습니다.
-중요한 메일은 각각의 대상자 별로 개별리뷰 후 발송할 수 있습니다.
+중요 메일은 대상자별로 내용을 리뷰한 후 개별 발송할 수 있습니다.
 
 - 현재 수신자 번호 이전 대상자의 메일을 미리보기합니다.
 - 현재 수신자 번호 대상자의 메일을 미리보기합니다.
 - 현재 수신자 번호 다음 대상자의 메일을 미리보기합니다.
 
+## 프로그램 사용 예시
+
 ![mSend03](pics/mSend03.jpg)<br>
-Preview Current 실행 시 아웃룩 화면
+📌 기본 파일에는 샘플 메일 예제가 포함되어 있습니다.  
+먼저 **Resources Update** 버튼으로 첨부파일 경로를 갱신한 후, **Preview Current** 버튼을 눌러 샘플 메일을 확인해보세요.
+
+
+![mSend04](pics/mSend04.jpg)<br>
+**Preview Current** 실행 시 아웃룩 화면
