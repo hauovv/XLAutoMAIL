@@ -7,7 +7,7 @@ XL-AutoMAIL은 수신자별로 메일 제목, 본문, 첨부파일을 맞춤 구
 
 ***
 ## 프로그램 다운로드
-XL-AutoMAIL 파일은 이 GitHub 저장소의 files 폴더에서 다운로드 할 수 있습니다.
+XL-AutoMAIL 파일은 이 GitHub 저장소의 [files](https://github.com/hauovv/XLAutoMAIL/tree/main/files) 폴더에서 다운로드 할 수 있습니다.
 
 ※ zip 압축 파일입니다. 반드시 압축을 풀고 사용하세요.(샘플 메일을 위한 샘플 이미지 및 첨부파일이 포함되어 있습니다.)
 - zip 파일에는 샘플 메일을 위한 샘플 이미지 및 첨부파일이 포함되어 있습니다.
